@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AiSD_2
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {   Console.WriteLine("Введите Фамилию студента:");
             string lastName = Console.ReadLine();
@@ -22,11 +22,36 @@ namespace AiSD_2
             Console.WriteLine("Введите id студента:");
             int studentId = Convert.ToInt32(Console.ReadLine());
 
+            int arrLength = 4;
+            uint[] arrUint = new uint[arrLength];
+
 
 
 
 
 
         }
+        static uint InputArray(uint[] Array)
+        {
+
+        }
     }
+    struct Student
+    {
+        public Char[] arrLastName;
+        public Char[] arrFirstName;
+        public int studentId;
+        public uint[] arrUint;
+
+        public Student(Char[] arrLastName, Char[] arrFirstName, int studentId, uint[] arrUint)
+        {
+            this.arrLastName = arrLastName;
+            this.arrFirstName = arrFirstName;
+            this.studentId = studentId;
+            this.arrUint = arrUint;
+
+        }
+
+    }
+    
 }
